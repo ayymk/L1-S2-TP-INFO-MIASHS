@@ -53,7 +53,7 @@ int main(){
 		printf("ALLOCATION REUSSIÉ");
 	}
 	
-	/*SEGMENTATION FAULT ICI -> Probleme avec le maze[][].nb_case ??  ====> echec d'allocation, revoir la fonction !
+	/*SEGMENTATION FAULT ICI -> Probleme avec le maze[][].nb_case ??  ====> echec d'allocation, revoir la fonction !!!!!
 	for(int i=0;i<cote;i++){
 		printf("\n");
 		for(int j=0;j<cote;j++){
