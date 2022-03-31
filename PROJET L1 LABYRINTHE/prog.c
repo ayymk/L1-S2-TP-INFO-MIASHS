@@ -19,7 +19,7 @@ typedef struct case_tab cstb;
 cstb ** matrice(int cote){
 	cstb **p;
 	int cpt=0,i;
-	//cstb **tab;
+
 	p=(cstb**)malloc(sizeof(cstb*)*cote); //crée un tableau 1D de taille cote
 
 	for(i=0;i<cote;i++){
@@ -32,8 +32,6 @@ cstb ** matrice(int cote){
 			cpt++;
 		}
 	}
-	//p=tab;
-
 	return p;
 }
 
@@ -50,7 +48,7 @@ int main(){
 		printf("\n\n\n\t\t\t ----- ECHEC ALLOCATION ----");
 		return 0;
 	}else{
-		printf("ALLOCATION REUSSIÉ!!!");
+		printf("\n\n\n\t\t\t ----- ALLOCATION REUSSIE ----");
 	}
 
 	for(int i=0;i<cote;i++){
