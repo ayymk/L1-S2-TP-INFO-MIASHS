@@ -48,13 +48,14 @@ int main(){
 		printf("\n\n\n\t\t\t ----- ECHEC ALLOCATION ----");
 		return 0;
 	}else{
-		printf("\n\n\n\t\t\t ----- ALLOCATION REUSSIE ----");
+		printf("\n\n\n\t\t\t ----- ALLOCATION REUSSIE ----\n\n");
 	}
 
+ //Affichage de la matrice
 	for(int i=0;i<cote;i++){
 		printf("\n");
 		for(int j=0;j<cote;j++){
-			printf("%d \t",maze[i][j].nb_case);
+			printf("|\t%d \t|",maze[i][j].nb_case);
 		}
 	}
 
