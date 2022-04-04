@@ -9,10 +9,10 @@ int puissance(int x, int n){
 	return x;
 }
 
-int nb_chiffres(int x){
+int nb_chiffres(int nb){
 	int cpt=0;
-	while(x!=0){
-		x/=10;
+	while(nb!=0){
+		nb/=10;
 		cpt++;
 	}
 	return cpt;
