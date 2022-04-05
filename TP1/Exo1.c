@@ -11,7 +11,7 @@ int test_premier(long long nb){
 	return 1;
 }
 
-long long pp_facteur_prem(long long nb){
+long long pp_facteur_prem(long long nb){	//QUESTION 1
 	long long i,pp_div=0;
 	
 	for(i=sqrt(nb);i>1;i--){
@@ -26,7 +26,7 @@ long long pp_facteur_prem(long long nb){
 	else return nb;
 }
 
-long long pg_facteur_prem(long long nb){
+long long pg_facteur_prem(long long nb){	//QUESTION 2
 	long long i;
 	
 	for(i=sqrt(nb);i>1;i--){
@@ -39,7 +39,7 @@ long long pg_facteur_prem(long long nb){
 	return nb;
 }
 
-int test_nbprefect(long long nb){
+int test_nbperfect(long long nb){	//QUESTION 3
 	long long sum=0;
 	
 	for(long long i=nb/2;i>0;i--){
@@ -51,7 +51,7 @@ int test_nbprefect(long long nb){
 	else return 0;
 }
 
-long test_Harshad(long long nb){
+long test_Harshad(long long nb){	//QUESTION 4
 	if(nb<1)return 0;
 	long long temp=nb;
 	long sum=0;
@@ -69,13 +69,14 @@ int main(){
 	long long a=600851475143;
 	long long b=8128;
 	long long c=195;
+	
 	printf("\nPremier ou non : %d",test_premier(a));
-	printf("\nPlus petit facteur premier : %lld",pp_facteur_prem(a));
-	printf("\nPlus grand facteur premier : %lld",pg_facteur_prem(a));
+	printf("\nPlus petit facteur premier : %lld",pp_facteur_prem(a));	//QUESTION 1
+	printf("\nPlus grand facteur premier : %lld",pg_facteur_prem(a));	//QUESTION 2
 	
-	printf("\nParfait ou non : %d",test_nbprefect(b));
+	printf("\nParfait ou non : %d",test_nbperfect(b));	//QUESTION 3
 	
-	printf("\nTest Harshad : %ld",test_Harshad(c));
+	printf("\nTest Harshad : %ld",test_Harshad(c));	//QUESTION 4
 	
 	return 0;
 }
