@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+#include <stdlib.h> // Pour le exit(0)
+#include <math.h> //Pour le sqrt()
 
 
 typedef struct rationnel{
