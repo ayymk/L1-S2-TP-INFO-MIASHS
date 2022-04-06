@@ -36,28 +36,6 @@ void affichage_fichier(char *nom){
 	fclose(fp);
 }
 
-void affichage_fichier_lignes(char *nom){
-	FILE *fp = NULL;
-	int i = 1;
-	fp = fopen(nom,"r");
-	if(fp==NULL)perror("Echec ouverture du fichier");
-
-	printf("\nAffichage fichier :\n\n");
-	printf("%d :\t",i);
-	while(1){ 							//Boucle infinie
-		char cchar = fgetc(fp);
-		if(cchar==EOF)break; 	//Quitte la boucle quand rencontre EOF lors de lecture du fichier
-
-		if(cchar=='\n'){
-			i++;
-			printf("\n%d :\t",i);
-		}else{
-			 printf("%c",cchar);
-		}
-	}
-	fclose(fp);
-}
-
 int main(){
 
 	int nb_table;
@@ -68,7 +46,7 @@ int main(){
 
 	ecriture_simple();
 
-	affichage_fichier_lignes("table.txt");
+	affichage_fichier("table.txt");
 
   return 0;
 }
