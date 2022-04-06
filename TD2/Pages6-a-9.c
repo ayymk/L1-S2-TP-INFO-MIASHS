@@ -26,7 +26,7 @@ const int size=10;
 /* Reecriture 2 :
  * 1. *tab=0
  * 2. *(tab+4)=*(tab+3)
- * 3. *(*(tab))=*(tab+1)**(tab+2) ? //pas sûr
+ * 3. *(*(tab))=*(tab+1)**(tab+2)
 */
 
 /* Fonction mystere :
