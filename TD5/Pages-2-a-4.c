@@ -23,8 +23,8 @@ void table(int nb){
 }
 
 void affichage_fichier(char *nom){
-	FILE *fp=NULL;
-	fp=fopen(nom,"r");
+	FILE *fp = NULL;
+	fp = fopen(nom,"r");
 	if(fp==NULL)perror("Echec ouverture du fichier");
 
 	printf("\nAffichage fichier :\n\n");
@@ -37,15 +37,15 @@ void affichage_fichier(char *nom){
 }
 
 void affichage_fichier_lignes(char *nom){
-	FILE *fp=NULL;
-	int i=1;
-	fp=fopen(nom,"r");
+	FILE *fp = NULL;
+	int i = 1;
+	fp = fopen(nom,"r");
 	if(fp==NULL)perror("Echec ouverture du fichier");
 
 	printf("\nAffichage fichier :\n\n");
 	printf("%d :\t",i);
 	while(1){ 							//Boucle infinie
-		char cchar=fgetc(fp);
+		char cchar = fgetc(fp);
 		if(cchar==EOF)break; 	//Quitte la boucle quand rencontre EOF lors de lecture du fichier
 
 		if(cchar=='\n'){
