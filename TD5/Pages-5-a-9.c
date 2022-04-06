@@ -13,7 +13,7 @@ void affichage_sans_commentaires(char *nom){ // Masque commentaires et \t mais p
 
 		if(cchar=='#'){
 			while(cchar!='\n'){
-				cchar=fgetc(fp);
+				cchar = fgetc(fp);
 			}
 		}
 		if(cchar!='\t')printf("%c",cchar);
