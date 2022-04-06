@@ -37,7 +37,7 @@ int** allocation_2D(int largeur,int hauteur){
 	
 	for(int j = 0; j < hauteur; j ++) {
 		for(int i = 0; i < largeur; i ++) {
-			*( *(matrice + i) + j) = i*j; //
+			*( *(matrice + i) + j) = i*j; //pareil que : matrice[i][j]=i*j
 		}
 	}
 	
