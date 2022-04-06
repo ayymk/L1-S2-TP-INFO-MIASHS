@@ -32,9 +32,9 @@ void affiche_sizeof(){
  
  /*
 	int i , j , *ip ; 
-	ip = &i ; 	 // ip prend l'adresse de i
-	i = 22 ;		 // i=22 donc *ip=22 (pas ip, *ip(=valeur pointée par ip))
-	j = *ip ;		 // j prend la valeur pointée par ip = 22
+	ip = &i ; 		// ip prend l'adresse de i
+	i = 22 ;		// i=22 donc *ip=22 (pas ip, *ip(=valeur pointée par ip))
+	j = *ip ;		// j prend la valeur pointée par ip = 22
 	*ip = 17 ;	// la valeur pointée par ip devient 17 (i=17)
 	
 	A la fin, valeurs : i = 17 et j= 22
