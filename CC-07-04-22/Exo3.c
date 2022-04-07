@@ -43,7 +43,7 @@ void single(int *tab,int taille){
 }
 
 int main(){
-  
+  //int *tableau = allocation(SIZE2);		//Test avec valeur paire
   int *tableau = allocation(SIZE);
   
   for(int i = 0; i < SIZE; i++){
