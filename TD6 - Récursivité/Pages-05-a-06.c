@@ -9,7 +9,7 @@ int factorielle_iterative(int n){
 }
 
 int factorielle_recursive(int n){
-	if(n<2)return 1;
+	if(n < 2)return 1;
 	return n * factorielle_recursive(n-1);
 }
 
@@ -17,9 +17,9 @@ int main(){
 	
 	int fact = 4;
 	
-	printf("\nItérative : %d! = %d\n",fact,factorielle_iterative(fact));
+	printf("\nItérative : %d! = %d\n",fact, factorielle_iterative(fact));
 
-	printf("\nRécursive : %d! = %d\n",fact,factorielle_recursive(fact));
+	printf("\nRécursive : %d! = %d\n",fact, factorielle_recursive(fact));
 	
 	return 0;
 }
