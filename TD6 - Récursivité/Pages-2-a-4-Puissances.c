@@ -15,7 +15,7 @@ int fonction_puissance_recursive(int x, int n){
 	return x*fonction_puissance_recursive(x,n-1);
 }
 
-int fonction_puissance_recursive_rapide(int x, int n){
+int fonction_puissance_recursive_rapide(int x, int n){ // pas compris comment la faire avec un seul appel recursif
 	if(n==0)return 1;
 	if(n%2==1)return x*fonction_puissance_recursive_rapide(x*x,(n-1)/2);
 	else return fonction_puissance_recursive_rapide(x*x,n/2);
