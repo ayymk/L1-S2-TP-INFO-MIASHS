@@ -22,7 +22,6 @@ int fonction_puissance_recursive_rapide(int x, int n){
 	
 }
 
-
 int main(){
 	
 	int nb=3,pui=4;
