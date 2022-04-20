@@ -15,11 +15,17 @@ int fonction_puissance_recursive(int x, int n){
 	return x * fonction_puissance_recursive(x, n - 1);
 }
 
-int fonction_puissance_recursive_rapide(int x, int n){ // pas compris comment la faire avec un seul appel recursif
+int fonction_puissance_recursive_rapide(int x, int n){ 
 	if(n==0)return 1;
-	if(n%2==1)return x * fonction_puissance_recursive_rapide(x*x,(n - 1)/2);
-	else return fonction_puissance_recursive_rapide(x*x, n/2);
+	int pui,var;
 	
+	if(n%2==0)pui = n - 1;
+	else pui = n;
+	
+	var=fonction_puissance_recursive_rapide(x*x, var/2);
+	
+	if(n%2==0)return var;
+	else return x*var;
 }
 
 int main(){
