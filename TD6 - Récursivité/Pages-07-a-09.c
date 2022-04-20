@@ -8,6 +8,7 @@ void tous_les_entiers_de_x_a_y_recursif( int debut , int fin){
 }
 
 int nombre_de_chiffres_recursif (int n){
+	if(n<0) n = -n;
 	if(n < 10) return 1;
 	return 1 + nombre_de_chiffres_recursif(n / 10);	
 }
