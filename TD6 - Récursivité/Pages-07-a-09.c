@@ -14,7 +14,7 @@ int nombre_de_chiffres_recursif (int n){
 
 int pgcd(int a, int b){
 	if(b==0)return a;
-	else return pgcd(b, a % b);
+	return pgcd(b, a % b);
 }
 
 int main(){
