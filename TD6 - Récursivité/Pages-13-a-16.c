@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+int dichotomie recursive(int *tab, int debut, int fin, int valeur){
+	
+	
+}
+
 
 
 int main(){
@@ -8,4 +13,3 @@ int main(){
 	
 	return 0;
 }
-
