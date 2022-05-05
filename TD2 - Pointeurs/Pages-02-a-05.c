@@ -23,7 +23,7 @@ void affiche_sizeof(){
 
 /*Questions de cours pt. 3 :
  * 1. Un pointeur est une variable qui contient l'-adresse- d'une zone dans la -mémoire-.
- * 2. Un pointeur doit toujiurs être initialisé à la valeur -NULL-.
+ * 2. Un pointeur doit toujours être initialisé à la valeur -NULL-.
  * 3. La valeur d'un pointeur qui ne pointe vers aucune variable doit être -NULL-.
  * 4. L'opérateur & placé devant le nom d'une variable permet d'obtenir son -adresse-. 
  * 5. L'adresse d'une variable correspond à l'adresse du premier de ses -octets-.
@@ -53,7 +53,7 @@ void swap(int*p,int*q){
 
 /*Sequence d'instruction 2 :
  * 
- * printf1 : i = 4	j = 10		*p = 4		*q =  10
+ * printf1 : i = 4	j = 10		*p = 4	*q =  10
  * printf2 : i = 14	j = 10		*p = 14	*q = 10 
  * printf3 : i = 14	j = 10		*p = 10	*q = 10
  * printf4 : i = 14	j = 20		*p = 20	*q = 20
