@@ -17,14 +17,11 @@ int fonction_puissance_recursive(int x, int n){
 
 int fonction_puissance_recursive_rapide(int x, int n){  //ERREUR SUR CETTE FONCTION
 	if(n==0)return 1;
-	int pui,var;
+	int pui=n,var=x;
 	
-	if(n%2==0)pui = n - 1;
-	else pui = n;
+	var=fonction_puissance_recursive_rapide(x*x, pui/2);
 	
-	var=fonction_puissance_recursive_rapide(x*x, var/2);
-	
-	if(n%2==0)return var;
+	if(pui%2==0)return var;
 	else return x*var;
 }
 
